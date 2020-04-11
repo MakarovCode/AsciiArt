@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Ascii Art</title>
+
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <script src="https://kit.fontawesome.com/5935c15ea9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="orange darken-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Ascii Art</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">By: Don One Fallen</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <%= yield %>
+
+</body>
+</html>
