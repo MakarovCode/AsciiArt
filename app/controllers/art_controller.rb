@@ -22,12 +22,13 @@ class ArtController < ApplicationController
       image.colorspace "Gray"
       pixels = image.get_pixels
 
-      art = ""
+      art = "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
 
       height = image.data["geometry"]["height"].to_i
       height = height - (height % 4)
 
       (0..height-4).step(4).each do |i|
+        art += "⣿"
         (0..61).step(2).each do |j|
           chunk_binary = ""
 
@@ -50,8 +51,10 @@ class ArtController < ApplicationController
           end
 
         end
-        art += "\n"
+        art += "⣿\n"
       end
+
+      art += "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿"
 
       @image_ori.update_attribute :art, art
     end
