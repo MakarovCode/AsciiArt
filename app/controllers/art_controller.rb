@@ -36,13 +36,13 @@ class ArtController < ApplicationController
             (0..1).each do |aj|
 
               if pixels[i+ai][j+aj][0] < 80
-                if params[:invert].blank?
+                if params[:inverted].blank?
                   chunk_binary += "1"
                 else
                   chunk_binary += "0"
                 end
               else
-                if params[:invert].blank?
+                if params[:inverted].blank?
                   chunk_binary += "0"
                 else
                   chunk_binary += "1"
