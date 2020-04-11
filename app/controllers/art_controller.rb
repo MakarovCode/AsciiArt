@@ -7,7 +7,7 @@ class ArtController < ApplicationController
     code = (0...8).map { (65 + rand(26)).chr }.join
     image = Image.new code: code, source: params[:file]
     if image.save
-      redirect_to ascii_art_path(image.id)
+      redirect_to ascii_art_path(image.id, inverted: params[:inverted])
     else
       redirect_to art_index_path error: image.errors.full_messages.to_sentence
     end
