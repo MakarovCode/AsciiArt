@@ -35,9 +35,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'chunky_png'
-
-gem 'angularjs-rails'
-gem 'angularjs-file-upload-rails', '~> 2.2.0'
 
 gem 'materialize-sass', '~> 1.0.0'
