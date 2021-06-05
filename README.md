@@ -1,24 +1,22 @@
-# README
+# AsciiArt
+Turn images into Ascii Art
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# DEMO
+[The Ascii Art](https://theasciiart.herokuapp.com/) - Heroku Demo Application
 
-Things you may want to cover:
+# Class Gist
+[Get Gist](https://gist.github.com/MakarovCode/c4101a7a528341a613966cd6974fb928) - Gist for the ruby class
 
-* Ruby version
+# Calling the Class
 
-* System dependencies
+```ruby
+# First parameter is the full path of the image to convert
+# Second parameter is to turn the white like pixels to black
+# Third parameter is the size, nil will get you full size image
+a = AsciiArt.new "full/path/to/image", true, "100x100"
+puts a.convert
 
-* Configuration
+# Important for this class to work you must install the gem mini_magick
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+gem "mini_magick"
+```
