@@ -1,26 +1,22 @@
-# RubyWarriorGUI
-This is a Graphic implementation of the infamous Ruby command-line game RubyWarrior using Ruby on Rails.
+# AsciiArt
+Turn images into Ascii Art
 
 # DEMO
-[RubyWarrior GUI](https://rubywarrior.geekoi.com/) - Play the game
+[The Ascii Art](https://theasciiart.herokuapp.com/) - Heroku Demo Application
 
-# HONORS
-[Original Game and Repo](https://github.com/ryanb/ruby-warrior) - RubyWarrior by ryanb
+# Class Gist
+[Get Gist](https://gist.github.com/MakarovCode/c4101a7a528341a613966cd6974fb928) - Gist for the ruby class
 
-# HOW TO INSTALL
+# Calling the Class
 
 ```ruby
-# 1. Clone the repo
+# First parameter is the full path of the image to convert
+# Second parameter is to turn the white like pixels to black
+# Third parameter is the size, nil will get you full size image
+a = AsciiArt.new "full/path/to/image", true, "100x100"
+puts a.convert
 
-git clone https://github.com/ryanb/ruby-warrior.git
+# Important for this class to work you must install the gem mini_magick
 
-# 2. Run bundle
-
-bundle
-
-# 3. Run the DB
-
-rails db:create db:migrate db:seed
-
-# Type localhost:3000
+gem "mini_magick"
 ```
