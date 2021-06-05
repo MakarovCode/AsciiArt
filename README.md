@@ -1,11 +1,11 @@
 # AsciiArt
-Turn images into Ascii Art
+This is a Graphic implementation of the infamous Ruby command-line game RubyWarrior using Ruby on Rails.
 
 # DEMO
-[The Ascii Art](https://theasciiart.herokuapp.com/) - Heroku Demo Application
+[RubyWarrior GUI](https://rubywarrior.geekoi.com/) - Play the game
 
 # Class Gist
-[Get Gist](https://gist.github.com/MakarovCode/c4101a7a528341a613966cd6974fb928) - Gist for the ruby class
+[Original Game and Repo](https://github.com/ryanb/ruby-warrior) - Gist for the ruby class
 
 # Calling the Class
 
