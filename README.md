@@ -20,3 +20,21 @@ puts a.convert
 
 gem "mini_magick"
 ```
+
+# HOW TO INSTALL
+
+```ruby
+# 1. Clone the repo
+
+git clone https://github.com/MakarovCode/AsciiArt.git
+
+# 2. Run bundle
+
+bundle
+
+# 3. Run the DB
+
+rails db:create db:migrate db:seed
+
+# Type localhost:3000
+```
